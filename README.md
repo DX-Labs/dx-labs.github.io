@@ -1,2 +1,1 @@
-# dx-labs.github.io
-Landing Page
+# XD Labs Landing Page
