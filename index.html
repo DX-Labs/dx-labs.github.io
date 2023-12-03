@@ -20,8 +20,10 @@
 
         .container {
             max-width: 600px;
+            width: 90%; /* Make width responsive */
             margin: 0 auto;
             padding: 20px;
+            box-sizing: border-box; /* Include padding in the width */
             animation: fadeIn 2s ease-in-out;
         }
 
@@ -29,6 +31,11 @@
             font-size: 3em;
             font-weight: bold;
             margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 50%; /* Make image responsive */
+            height: auto;
         }
 
         .tagline {
@@ -45,16 +52,35 @@
 
         .cursor {
             display: inline-block;
-            width: 10px; /* Narrower for a more cursor-like appearance */
-            height: 0.8em; /* Height relative to the font size */
-            background-color: #fff; /* Start as white */
+            width: 10px;
+            height: 0.8em;
+            background-color: #fff;
             margin-left: 5px;
             position: relative;
-            bottom: -0.05em; /* Adjust this value as necessary */
+            bottom: -0.05em;
             animation: blink-animation 1s steps(5, start) infinite;
-            animation-delay: 1.5s; /* Delay the start and appearance of the blink */
+            animation-delay: 1.5s;
         }
 
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2em; /* Smaller font size for smaller screens */
+            }
+            .logo img {
+                max-width: 50%; /* Adjust the image size to 50% of its container */
+                height: auto; /* Maintain aspect ratio */
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .description {
+                font-size: 0.8em;
+            }
+            .cursor {
+                height: 0.6em; /* Adjust cursor size for consistency */
+            }
+        }
 
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -74,7 +100,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo"><img src="https://raw.githubusercontent.com/XD-Labs-Inc/xd-labs-inc.github.io/9fa48f723056732a18af3513a3594756bf374bdb/XDLabsSVFG.svg"></div>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/XD-Labs-Inc/xd-labs-inc.github.io/9fa48f723056732a18af3513a3594756bf374bdb/XDLabsSVFG.svg" alt="XD Labs Logo">
+        </div>
         <div class="logo">XD Labs<span class="cursor"></span></div>
         <p class="tagline">Pioneering AI-First Software Development</p>
         <p class="description">
