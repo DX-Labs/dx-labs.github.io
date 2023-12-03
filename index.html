@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX Labs - AI-First Software Development</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        .description {
+            font-size: 1em;
+            line-height: 1.6;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromLeft {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes slideInFromRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">DX Labs</div>
+        <p class="tagline">Pioneering AI-First Software Development</p>
+        <p class="description">
+            At DX Labs, we integrate cutting-edge AI technology with innovative software solutions to drive your business forward.
+        </p>
+    </div>
+</body>
+</html>
