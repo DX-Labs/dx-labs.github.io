@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XD Labs - AI Software</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/XD-Labs-Inc/xd-labs-inc.github.io/main/favicon.png" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%; /* Make width responsive */
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the width */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 60px;
+        }
+
+        .logo img {
+            max-width: 50%; /* Make image responsive */
+            height: auto;
+            filter: drop-shadow(0 0 10px #fff) /* white glow */
+            drop-shadow(0 0 20px #fff) /* more white glow */
+            drop-shadow(0 0 30px #09f) /* blue glow */
+            drop-shadow(0 0 40px #09f); /* more blue glow */
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        .description {
+            font-size: 1em;
+            line-height: 1.6;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 0.8em;
+            background-color: #fff;
+            margin-left: 5px;
+            position: relative;
+            bottom: -0.05em;
+            animation: blink-animation 1s steps(5, start) infinite;
+            animation-delay: 1.5s;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2em; /* Smaller font size for smaller screens */
+            }
+            .logo img {
+                max-width: 50%; /* Adjust the image size to 50% of its container */
+                height: auto; /* Maintain aspect ratio */
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .description {
+                font-size: 0.8em;
+            }
+            .cursor {
+                height: 0.6em; /* Adjust cursor size for consistency */
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes blink-animation {
+            0%, 100% { background-color: #fff; }
+            50% { background-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/XD-Labs-Inc/xd-labs-inc.github.io/9fa48f723056732a18af3513a3594756bf374bdb/XDLabsSVFG.svg" alt="XD Labs Logo">
+        </div>
+        <div class="logo">XD Labs<span class="cursor"></span></div>
+        <p class="tagline">Creating AI-First Software</p>
+        <p class="description">
+            Building the future with AI-Powered, Scalable Software for a Transformative Era
+        </p>
+    </div>
+</body>
+</html>
